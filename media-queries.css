@@ -2,11 +2,97 @@
     html {
         font-size: 13px;
     }
+
+    .bar-fixed {
+        padding: 1rem 4rem;
+    }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 700px) {
+    .benefits-section h1 {
+        font-size: 5rem;
+    }
+
+    .button-vip {
+        font-size: 0.7rem;
+    }
+
+    .bar-fixed {
+        flex-direction: column;
+    }
+
+    .bar-fixed p {
+        font-size: 0.8rem;
+        margin: 1rem 0;
+    }
+
+    .bar-fixed-bg {
+        top: 0;
+    }
+
+
+}
+
+@media screen and (max-width: 610px) {
+    .launch-section h1 {
+        font-size: 4rem;
+    }
+
+
+}
+
+@media screen and (max-width: 500px) {
     html {
         font-size: 10px;
     }
 
+    h1,
+    h2 {
+        letter-spacing: 0.3rem;
+    }
+
+    .card-4>div:nth-child(1)::after {
+        bottom: -1.5rem;
+    }
+
+    .card-4>div:nth-child(1)::before {
+        bottom: -1.5rem;
+    }
+
+    .card-4 div:nth-child(2)::after {
+        top: -1rem;
+    }
+
+    .card-4 div:nth-child(2)::before {
+        top: -1rem;
+    }
+
+    .benefits-section h1 span::after {
+        left: 1rem;
+        top: 0rem;
+    }
+
+    .launch-section div p span::after {
+        width: 3.8rem;
+        left: -0.3rem;
+    }
+
+    main form {
+        gap: 1rem;
+    }
+
+}
+
+@media screen and (max-width: 380px) {
+    html {
+        font-size: 8px;
+    }
+
+    .button {
+        font-size: 1.6rem;
+    }
+
+    input::placeholder {
+        font-size: 1.4rem;
+    }
 }

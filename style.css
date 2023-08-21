@@ -61,7 +61,15 @@ body {
 }
 
 .items-center {
+    margin-top: 2rem;
+    position: relative;
     align-items: center;
+}
+
+.inv-text {
+    position: absolute;
+    right: -9rem;
+    pointer-events: none;
 }
 
 .justify-center {
@@ -99,13 +107,14 @@ body {
 .button {
     background-color: var(--color-primary);
     padding: 1.2rem 4rem;
+    font-size: 0.85rem;
 }
 
 .button-vip {
     border: 1px var(--color-white) solid;
     padding: 1rem 3rem;
     border-radius: 3rem;
-    font-size: 0.rem;
+    font-size: 0.9rem;
 }
 
 input {
@@ -116,6 +125,13 @@ input {
 
 input::placeholder {
     color: rgb(185, 185, 185);
+    font-size: 0.9rem;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
 }
 
 .font-bueno {
@@ -178,17 +194,21 @@ header p {
     left: 0;
     /* From https://css.glass */
     background: rgba(0, 0, 0, 0.5);
-    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3);
+    /* box-shadow: 0 4px 30px rgba(0, 0, 0, 0.3); */
     backdrop-filter: blur(5px);
     -webkit-backdrop-filter: blur(10px);
-    border: 1px solid rgba(255, 255, 255, 0.3);
+    /* border: 1px solid rgba(255, 255, 255, 0.3); */
     z-index: -1;
 }
 
-.bar-fixed div {
+.bar-fixed {
     display: flex;
     align-items: center;
-    /* padding-right: 55rem; */
+    text-align: center;
+}
+
+.bar-fixed p {
+    margin: 0 4rem;
 }
 
 .bar-fixed div img {
@@ -551,7 +571,7 @@ main form img {
 }
 
 .launch-section {
-    padding: 15rem;
+    padding: 15rem 0;
 }
 
 .launch-section h1 {
@@ -569,9 +589,14 @@ main form img {
 }
 
 .launch-section div p span::after {
-    content: url(assets/rasura.svg);
+    content: '';
+    width: 3.5rem;
+    height: 2rem;
+    background: url(./assets/rasura.svg) no-repeat center/contain;
     position: absolute;
-    left: 0;
+    top: -0.3rem;
+    left: 0rem;
+    z-index: 3;
 }
 
 .launch-section div p:nth-child(2) {
@@ -587,6 +612,8 @@ main form img {
     opacity: 1;
 }
 
+
+
 footer {
     padding-top: 5rem;
     padding-bottom: 10rem;
@@ -598,6 +625,8 @@ footer div {
     margin-top: 2rem;
     margin-bottom: 5rem;
 }
+
+
 
 .sr-only {
     border: 0 !important;
