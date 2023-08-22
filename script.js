@@ -1,17 +1,4 @@
 const barFixed = document.getElementsByClassName("bar-fixed")[0];
-// window.addEventListener("scroll", (event) => {
-
-// });
-// function fade() {
-// barFixed.classList.add("fade-out");
-//     console.log("ds");
-// }
-// console.log(barFixed);
-
-/**
- * This function will determine if a client mousewheel is scrolling up or down.
- */
-//window.addEventListener("load", eScroll);
 
 function eScroll() {
 
@@ -59,3 +46,23 @@ function scrollUp() {
     })
 
 }
+
+// Seleciona o elemento que representa a área desejada na tela
+const areaDesejada = document.getElementById('sua-area-desejada');
+
+// Função para verificar se o usuário está na área desejada
+function verificarArea() {
+    const alturaTela = window.innerHeight; // Altura da tela visível
+    const scrollTop = window.scrollY; // Posição vertical do usuário
+    const areaTopo = areaDesejada.offsetTop; // Posição vertical da área desejada
+
+    // Verifica se o topo da área desejada está visível na tela
+    if (scrollTop <= areaTopo && areaTopo <= scrollTop + alturaTela) {
+        console.log('Usuário está na área desejada');
+    } else {
+        console.log('Usuário não está na área desejada');
+    }
+}
+
+// Registra o evento de scroll para chamar a função verificarArea
+window.addEventListener('scroll', verificarArea);
