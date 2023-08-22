@@ -9,6 +9,10 @@
 }
 
 @media screen and (max-width: 700px) {
+    form img {
+        width: 50rem;
+    }
+
     .benefits-section h1 {
         font-size: 5rem;
     }
@@ -30,6 +34,12 @@
         top: 0;
     }
 
+    footer {
+        padding-bottom: 15rem;
+
+    }
+
+
 
 }
 
@@ -48,7 +58,7 @@
 
     h1,
     h2 {
-        letter-spacing: 0.3rem;
+        letter-spacing: 0.1rem;
     }
 
     .card-4>div:nth-child(1)::after {

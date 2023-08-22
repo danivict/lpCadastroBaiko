@@ -47,9 +47,9 @@ window.addEventListener("load", scrollUp);
 
 function scrollUp() {
 
-    window.addEventListener('mousewheel', (event) => {
+    window.addEventListener('mousewheel', () => {
 
-        if (event.wheelDeltaY > 0) {
+        if (window.scrollY < 250) {
 
             barFixed.classList.add("fade-out");
             barFixed.classList.remove("fade-in");

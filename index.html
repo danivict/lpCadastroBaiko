@@ -41,7 +41,7 @@
 
     </header>
 
-    <main class="flex justify-center">
+    <main id="main" class="flex justify-center">
         <form action="" class="flex flex-direction-col">
             <img src="assets/logo-form-baiko.svg" alt="" class="mx-auto">
             <label class="sr-only" for="name">Nome</label>
@@ -52,6 +52,10 @@
             <input placeholder="Seu número" id="number" type="number">
             <button class="button">Entrar na lista vip!</button>
         </form>
+
+        <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script><lottie-player
+            id="arrow-down" src="https://lottie.host/6edc25ea-9f97-4670-9352-2004a9726de9/ePlxURRZyY.json" speed="1"
+            style="width: 48px; height: 48px" loop autoplay direction="1" mode="normal"></lottie-player>
     </main>
 
     <section class="benefits-section">
@@ -81,13 +85,18 @@
                         totalmente inéditos.</p>
                 </article>
 
-                <article class="card card-5">
-                    <p>Lista vip</p>
-                    <h2 class="font-bueno">Venha fazer parte do nosso aquário</h2>
-                    <p>Entre na lista VIP e garanta todos esses benefícios agora mesmo! Ah, e tem mais coisa vindo por
-                        ai,
-                        então ainda tem mais surpresa hein.</p>
-                </article>
+                <a href="#main">
+                    <article class="card card-5">
+                        <img class="arrow-card" src="./assets/seta-direita.svg" alt="seta direita">
+                        <p>Lista vip</p>
+                        <h2 class="font-bueno">Venha fazer parte do nosso aquário</h2>
+                        <p>Entre na lista VIP e garanta todos esses benefícios agora mesmo! Ah, e tem mais coisa vindo
+                            por
+                            ai,
+                            então ainda tem mais surpresa hein.</p>
+                    </article>
+                </a>
+
 
                 <article class="card card-7">
                     <p>Bônus</p>
@@ -100,6 +109,7 @@
 
             <div>
                 <article class="card card-2">
+                    <img class="arrow-card" src="./assets/seta-direita.svg" alt="seta direita">
                     <p>Pesquisa</p>
                     <h2 class="font-bueno">Nos ajude a te entender!</h2>
                     <p>Responda a uma pesquisa rápida sobre nosso público ajudando a Baiko a desenvolver o melhor para
