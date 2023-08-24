@@ -9,6 +9,8 @@
 }
 
 @media screen and (max-width: 700px) {
+
+
     form img {
         width: 50rem;
     }
@@ -23,6 +25,17 @@
 
     .bar-fixed {
         flex-direction: column;
+        width: 100vw;
+    }
+
+    .bar-fixed div {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .bar-fixed div img {
+        margin: 0;
     }
 
     .bar-fixed p {
@@ -34,21 +47,21 @@
         top: 0;
     }
 
-    footer {
-        padding-bottom: 15rem;
-
+    #exclusive::after {
+        width: 125%;
+        height: 125%;
+        top: -1rem;
     }
 
-
-
+    footer {
+        padding-bottom: 15rem;
+    }
 }
 
 @media screen and (max-width: 610px) {
     .launch-section h1 {
         font-size: 4rem;
     }
-
-
 }
 
 @media screen and (max-width: 500px) {
@@ -59,6 +72,10 @@
     h1,
     h2 {
         letter-spacing: 0.1rem;
+    }
+
+    header p {
+        font-size: 2rem;
     }
 
     .card-4>div:nth-child(1)::after {
@@ -77,20 +94,44 @@
         top: -1rem;
     }
 
-    .benefits-section h1 span::after {
-        left: 1rem;
-        top: 0rem;
+    .benefits-section h1 {
+        font-size: 7rem;
+    }
+
+    .launch-section h1 {
+        font-size: 4.5rem;
+    }
+
+    .launch-section div p:nth-child(1) {
+        font-size: 1.8rem;
     }
 
     .launch-section div p span::after {
-        width: 3.8rem;
+        width: 5rem;
         left: -0.3rem;
+        top: 0.2rem;
+    }
+
+    .inv-text {
+        right: 0rem;
+        left: 0;
+        top: 4rem;
+        text-align: center;
+        margin: 0;
+        font-size: 1.5rem;
     }
 
     main form {
         gap: 1rem;
     }
 
+    .br-line-mob {
+        display: block;
+    }
+
+    .br-line-desktop {
+        display: none;
+    }
 }
 
 @media screen and (max-width: 380px) {
@@ -99,10 +140,22 @@
     }
 
     .button {
-        font-size: 1.6rem;
+        font-size: 1.2rem;
     }
 
     input::placeholder {
-        font-size: 1.4rem;
+        font-size: 1.2rem;
+    }
+
+    .bar-fixed img {
+        max-width: 8rem;
+    }
+}
+
+@media screen and (max-width: 380px) and (orientation: landscape) {
+
+    /* Estilos para telas em modo paisagem aqui */
+    #main {
+        height: 200vh;
     }
 }
