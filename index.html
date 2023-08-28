@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Baiko</title>
     <meta name="description" content="Cadastro">
-    <link rel="shortcut icon" href="assets/blowfish3.svg" type="image/x-icon">
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./fonts.css">
-    <link rel="stylesheet" href="./media-queries.css">
+    <link rel="shortcut icon" href="./assets/blowfish3.svg" type="image/x-icon">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/fonts.css">
+    <link rel="stylesheet" href="./styles/media-queries.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -17,10 +17,13 @@
 </head>
 
 <body>
+    <a href="#main">
+        <div id="button-top"></div>
+    </a>
     <div class="bar-fixed">
         <div class="bar-fixed-bg"></div>
         <div>
-            <img src="assets/logo-baiko.svg" alt="logo da Baiko">
+            <img src="./assets/logo-baiko.svg" alt="logo da Baiko">
             <p>Seja o primeiro a receber novidades da Baiko Studios!</p>
         </div>
         <a href="#main" class="button-vip">Entrar na lista vip 🐡</a>
@@ -28,22 +31,18 @@
 
     <header id="header">
         <p>
-            SE INSCREVE NA LISTA VIP E GARANTA DIVERSOS BENEFÍCIOS<span class="pipe">|</span>ACESSO ANTECIPADO<span
-                class="pipe">|</span>CUPONS EXCLUSIVOS<span class="pipe">|</span>NOVIDADES<span
-                class="pipe">|</span>AVISOS<span class="pipe">|</span>PARTICIPE DO DESENVOLVIMENTO DE PEÇAS<span
-                class="pipe">|</span>
+            SE INSCREVE NA LISTA VIP E GARANTA DIVERSOS BENEFÍCIOS<span class="pipe">•</span>ACESSO ANTECIPADO<span
+                class="pipe">•</span>CUPONS EXCLUSIVOS<span class="pipe">•</span>NOVIDADES<span
+                class="pipe">•</span>AVISOS<span class="pipe">•</span>PARTICIPE DO DESENVOLVIMENTO DE PEÇAS<span
+                class="pipe">•</span>
         </p>
         <p>
-            SE INSCREVE NA LISTA VIP E GARANTA DIVERSOS BENEFÍCIOS<span class="pipe">|</span>ACESSO ANTECIPADO<span
-                class="pipe">|</span> CUPONS EXCLUSIVOS<span class="pipe">|</span> NOVIDADES<span class="pipe">|</span>
-            AVISOS <span class="pipe">|</span> PARTICIPE DO DESENVOLVIMENTO DE PEÇAS<span class="pipe">|</span>
+            SE INSCREVE NA LISTA VIP E GARANTA DIVERSOS BENEFÍCIOS<span class="pipe">•</span>ACESSO ANTECIPADO<span
+                class="pipe">•</span>CUPONS EXCLUSIVOS<span class="pipe">•</span>NOVIDADES<span
+                class="pipe">•</span>AVISOS<span class="pipe">•</span>PARTICIPE DO DESENVOLVIMENTO DE PEÇAS<span
+                class="pipe">•</span>
         </p>
-        <p>
-            SE INSCREVE NA LISTA VIP E GARANTA DIVERSOS BENEFÍCIOS<span class="pipe">|</span>ACESSO ANTECIPADO<span
-                class="pipe">|</span> CUPONS EXCLUSIVOS<span class="pipe">|</span> NOVIDADES<span
-                class="pipe">|</span>AVISOS<span class="pipe">|</span> PARTICIPE DO DESENVOLVIMENTO DE PEÇAS<span
-                class="pipe">|</span>
-        </p>
+
     </header>
 
     <main id="main" class="flex justify-center">
@@ -51,7 +50,7 @@
             action="https://baiko.us21.list-manage.com/subscribe/post?u=2500803ee6ca742bed304d42e&amp;id=3fa4cfd0b1&amp;f_id=0017dde6f0"
             method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank"
             class="flex flex-direction-col" onsubmit="return validarFormulario()">
-            <img src="assets/logo-form-baiko.svg" alt="Logo Baiko no formulário" class="mx-auto">
+            <img src="./assets/logo-form-baiko.svg" alt="Logo Baiko no formulário" class="mx-auto">
             <label class="sr-only" for="name">Nome</label>
             <label class="sr-only" for="email">Email</label>
             <label class="sr-only" for="tel">Número de telefone</label>
@@ -63,7 +62,10 @@
                 maxlength="15" pattern="\(\d{2}\)\s9\d{4}-\d{4}" title="Digite um telefone válido: (DD) 9XXXX-XXXX"
                 oninput="mascararTelefone(this)">
             <span id="erroTelefone"></span>
-            <button type="submit" name="subscribe" class="button">Entrar na lista vip!</button>
+            <button type="submit" name="subscribe" id="form-button" class="button">Entrar na lista vip!</button>
+            <div class="spinner-container">
+                <div class="spinner"></div>
+            </div>
         </form>
 
 
@@ -74,22 +76,22 @@
     <section class="benefits-section">
 
         <div>
-            <h1 class="font-bueno-extra-bold">Quem é <br class="br-line-mob">vip <br class="br-line-desktop">tem <br
-                    class="br-line-mob">be<span id="exclusive" class="font-bueno-extra-bold"><lottie-player
-                        src="./assets/exclusivo.json" id="exclusive-animated" speed="1"
-                        style="width: 200px; height: 200px" autoplay hover direction="1"
+            <h1 class="font-bueno-extra-bold title-vip">Quem é <br class="br-line-mob">vip <br
+                    class="br-line-desktop">tem <br class="br-line-mob">be<span id="exclusive"
+                    class="font-bueno-extra-bold"><lottie-player src="./assets/exclusivo.json" id="exclusive-animated"
+                        speed="2" style="width: 200px; height: 200px" direction="1"
                         mode="normal"></lottie-player>nefíc</span>io!!
             </h1>
         </div>
         <div class="cards">
             <div>
                 <article class="card card-1">
-
                     <div class="card-header">
                         <p>Benefício</p>
                         <p>01</p>
                     </div>
-                    <h2 class="font-bueno">Acesso <span class="font-bueno indented">antecipado</span></h1>
+                    <h2 class="font-bueno-extra-bold">Acesso <span
+                            class="font-bueno-extra-bold indented">antecipado</span></h1>
                         <p>Receba acesso antecipado à pré venda de novos lançamentos de coleções da marca.</p>
                 </article>
 
@@ -99,6 +101,7 @@
                         <p>02</p>
                     </div>
                     <div class="card-3-bg"></div>
+                    <div class="card-3-sub-bg"></div>
                     <h2 class="font-bueno">Novidades em primeira mão</h2>
                     <p class="text-center">Seja o primeiro a saber dos nossos lançamentos, recebendo avisos e conteúdos
                         totalmente inéditos.</p>
@@ -147,16 +150,14 @@
                             faz
                             parte da lista VIP.</p>
                     </div>
-                    <div>
+                    <div class="tag">
                         <div>
                             <p>ID exclusive</p>
                             <p>0510</p>
                         </div>
-                        <img src=" assets/codigo-de-barras.svg" alt="código de barras">
+                        <img src=" ./assets/codigo-de-barras.svg" alt="código de barras">
                     </div>
                 </article>
-
-
 
                 <article class="card card-6">
                     <div class="card-header">
@@ -166,18 +167,24 @@
                     <h2 class="font-bueno">Desenvolva com a Baiko</h2>
                     <div class="card-6-images">
                         <div class="images-slide">
-                            <img src="https://source.unsplash.com/random/300x300" alt="">
-                            <img src="https://source.unsplash.com/random/300x300" alt="">
-                            <img src="https://source.unsplash.com/random/300x300" alt="">
+                            <img src="./assets/carousel/1.png" alt="">
+                            <img src="./assets/carousel/2.png" alt="">
+                            <img src="./assets/carousel/3.png" alt="">
+                            <img src="./assets/carousel/4.png" alt="">
+                            <img src="./assets/carousel/5.png" alt="">
                         </div>
                         <div class="images-slide">
-                            <img src="https://source.unsplash.com/random/300x300" alt="">
-                            <img src="https://source.unsplash.com/random/300x300" alt="">
-                            <img src="https://source.unsplash.com/random/300x300" alt="">
+                            <img src="./assets/carousel/1.png" alt="">
+                            <img src="./assets/carousel/2.png" alt="">
+                            <img src="./assets/carousel/3.png" alt="">
+                            <img src="./assets/carousel/4.png" alt="">
+                            <img src="./assets/carousel/5.png" alt="">
                         </div>
 
+
                     </div>
-                    <p class="text-center">Participe do desenvolvimento das nossas peças, dando opniões e ideias.</p>
+                    <p class="text-center">Participe do desenvolvimento das nossas peças votando, dando opiniões e
+                        ideias.</p>
                 </article>
             </div>
 
@@ -186,18 +193,19 @@
 
     <section class="launch-section flex flex-direction-col justify-center items-center">
         <h1 class="font-bueno-extra-bold">Não perca nossa<br>primeira coleção</h1>
-        <div class="items-center">
-            <p>Lançamento no dia <span>??/??</span></p>
-            <p class="inv-text">Se inscreva<br> que vai ficar<br> sabendo >:)</p>
+        <div class="launch-date-wrapper items-center">
+            <p class="launch-date">Lançamento no dia <span>??/??</span></p>
+            <p class="inv-text">Se inscreva<br class="mob-off"> que vai ficar<br class="mob-off"> sabendo >:)</p>
         </div>
+        <a href="#main" class="button">Quero receber aviso da pré venda</a>
     </section>
 
     <footer class="flex flex-direction-col justify-center items-center">
         <h3>Redes sociais</h3>
         <div class="flex">
-            <a href="#">Facebook</a>
-            <a href="#">Instagram</a>
-            <a href="#">Tik Tok</a>
+            <a href="https://www.facebook.com/profile.php?id=100090578625621/" target="_blank">Facebook</a>
+            <a href="https://www.instagram.com/baiko.studios/" target="_blank">Instagram</a>
+            <a href="https://www.tiktok.com/@baiko.studios/" target="_blank">Tik Tok</a>
         </div>
         <p>© Copyright BAIKO STUDIOS - 2023</p>
     </footer>
@@ -206,9 +214,10 @@
 
 
     </script>
-    <script src="./activeFixedBarOnScroll.js"></script>
-    <script src="./telMask.js"></script>
-    <script src="./formValidation.js"></script>
+    <script src="./js/activeFixedBarOnScroll.js"></script>
+    <script src="./js/telMask.js"></script>
+    <script src="./js/formValidation.js"></script>
+    <script src="./js/buttonTop.js"></script>
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);
     </script>

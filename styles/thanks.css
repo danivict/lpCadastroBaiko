@@ -1,0 +1,76 @@
+body {
+    padding: 0;
+}
+
+.wrapper {
+    background: linear-gradient(rgba(0, 0, 0, 0.82),
+            rgba(0, 0, 0, 0.82)),
+        url('../assets/bg-thanks.jpg') no-repeat center/cover;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-top: 4rem;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 5.625rem;
+    padding-bottom: 9.5rem;
+    height: 100vh;
+
+}
+
+main section {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 1rem;
+    max-width: 35rem;
+}
+
+main section h1 {
+    font-family: 'BuenoExtraBold';
+    letter-spacing: 0.1rem;
+    font-size: 5rem;
+}
+
+main section p:nth-child(2) {
+    font-weight: 700;
+    letter-spacing: 0.02rem;
+}
+
+main section p:nth-child(3) {
+    color: #B7B7B7;
+    text-transform: none;
+    max-width: 30rem;
+}
+
+main section .button {
+    margin-top: 1rem;
+    width: 20rem;
+}
+
+footer {
+    background: #000;
+}
+
+.items-center {
+    margin-top: 0;
+}
+
+@media screen and (max-width: 380px) {
+    .button {
+        font-size: inherit;
+    }
+
+    main {
+        min-height: 50rem;
+    }
+
+}
