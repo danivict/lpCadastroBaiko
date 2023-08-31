@@ -265,6 +265,10 @@
         /* width: 10rem; */
     }
 
+    .mob-off {
+        display: none;
+    }
+
     .br-line-mob {
         display: block;
     }

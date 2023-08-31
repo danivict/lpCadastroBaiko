@@ -377,8 +377,8 @@ a {
 
 #exclusive-animated {
     position: absolute;
-    top: -6rem;
-    left: 5rem;
+    top: -4rem;
+    left: 10rem;
 }
 
 #exclusive::after {
@@ -735,7 +735,7 @@ a {
 
 .card-6-images .images-slide img:hover {
     transform: scale(1.1);
-    box-shadow: rgba(0, 0, 0, 0.623) 0px 0px 30px 1px;
+    box-shadow: rgba(0, 0, 0, 0.623) 0px 0px 1.9rem 1px;
 }
 
 .card-7 {
@@ -746,8 +746,6 @@ a {
     font-size: 3.75rem;
     padding: 1.25rem 0;
 }
-
-.card-7 p:nth-child(2n - 1) {}
 
 .card-1 p:last-child,
 .card-2 p:last-child,
@@ -808,7 +806,6 @@ a {
     margin-top: 2rem;
 }
 
-
 .launch-date-wrapper:hover .inv-text {
     opacity: 1;
 }
@@ -816,8 +813,6 @@ a {
 .inv-text-hover {
     opacity: 1;
 }
-
-
 
 footer {
     padding-top: 5rem;
