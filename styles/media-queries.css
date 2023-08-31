@@ -8,14 +8,22 @@
     }
 }
 
-@media screen and (max-width: 700px) {
+@media screen and (max-width: 770px) {
+    .br-line-mob {
+        display: block;
+    }
+
+    .br-line-desktop {
+        display: none;
+    }
 
     form img {
         width: 50rem;
     }
 
     .benefits-section h1 {
-        font-size: 5rem;
+        font-size: 8rem;
+        margin-left: 5%;
     }
 
     .button-vip {
@@ -46,15 +54,70 @@
         top: 0;
     }
 
+    .card-1 {
+        order: 1;
+    }
+
+    .card-3 {
+        order: 3;
+    }
+
+    .cards>div:nth-child(1)>a {
+        order: 2;
+    }
+
+    .card-7 {
+        order: 4;
+    }
+
+    .cards>div:nth-child(2) {
+        flex-direction: column-reverse;
+    }
+
+    .card-2 {
+        order: 1;
+    }
+
+    .card-4 {
+        order: 3;
+    }
+
+    .card-6 {
+        order: 2;
+    }
+
+    #exclusive-animated {
+        left: 0;
+    }
+
+}
+
+@media screen and (max-width: 690px) {
+    .benefits-section h1 {
+        font-size: 6.5rem;
+    }
+
+    #exclusive-animated {
+        width: 25rem !important;
+    }
 }
 
 @media screen and (max-width: 610px) {
+    .benefits-section h1 {
+        font-size: 5.5rem;
+    }
+
+    #exclusive-animated {
+        top: -8rem;
+        width: 22rem !important;
+    }
+
     .launch-section h1 {
         font-size: 4rem;
     }
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 530px) {
     html {
         font-size: 10px;
     }
@@ -62,10 +125,6 @@
     h1,
     h2 {
         letter-spacing: 0.1rem;
-    }
-
-    .mob-off {
-        display: none;
     }
 
     .bar-fixed {
@@ -101,7 +160,7 @@
     }
 
     #main {
-        min-height: 70rem;
+        /* height: 100dvh; */
     }
 
     #arrow-down {
@@ -114,32 +173,41 @@
         margin-top: 20rem;
     }
 
+    #main form input {
+        padding: 2rem 1rem;
+    }
+
     #main form img {
         width: 19rem;
         margin-bottom: 5rem;
     }
 
-    #main form .button,
     #main form input::placeholder {
         font-size: 1.1rem;
     }
 
+    #main form .button {
+        padding: 2.2rem 1rem;
+        font-size: 1.2rem;
+    }
+
     .benefits-section h1 {
-        font-size: 8.5rem;
+        font-size: 7.5rem;
         margin-bottom: 6rem;
         white-space: nowrap;
     }
 
     #exclusive-animated {
-        top: -6.5rem;
+        top: -11rem;
+        left: 7rem;
     }
 
     .card-3-bg {
-        background: url(../assets/model2.png) no-repeat left/120%;
+        background: url(../assets/model2.png) no-repeat 25% 50%/130%;
     }
 
     .card-3-sub-bg {
-        background: url(../assets/model2-2.png) no-repeat left/120%;
+        background: url(../assets/model2-2.png) no-repeat 25% 50%/130%;
     }
 
     .card-3-bg-hover {
@@ -233,8 +301,10 @@
         max-width: 8rem;
     }
 
+
+
     #exclusive-animated {
-        top: -5rem;
+        top: -15rem;
     }
 }
 

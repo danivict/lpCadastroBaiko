@@ -12,7 +12,8 @@ header {
     display: flex;
     justify-content: center;
     width: 100%;
-    padding-top: 4rem;
+    position: absolute;
+    top: 4rem;
 }
 
 main {
@@ -31,7 +32,7 @@ main section {
     text-align: center;
     align-items: center;
     gap: 1rem;
-    max-width: 35rem;
+    max-width: 40rem;
 }
 
 main section h1 {
@@ -41,17 +42,20 @@ main section h1 {
 }
 
 main section p:nth-child(2) {
+    font-size: 1.2rem;
     font-weight: 700;
     letter-spacing: 0.02rem;
 }
 
 main section p:nth-child(3) {
+    font-size: 1.2rem;
     color: #B7B7B7;
     text-transform: none;
     max-width: 30rem;
 }
 
 main section .button {
+    font-size: 1rem;
     margin-top: 1rem;
     width: 20rem;
 }
@@ -70,7 +74,7 @@ footer {
     }
 
     main {
-        min-height: 50rem;
+        min-height: 30rem;
     }
 
 }

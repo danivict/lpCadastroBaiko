@@ -70,7 +70,6 @@ function verificarArea() {
         card.classList.remove('card-1-hover');
         card3Bg.classList.remove('card-3-bg-hover');
         tag.classList.remove('tag-hover');
-
     });
 
     cards.forEach(card => {
