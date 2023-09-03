@@ -8,6 +8,13 @@
     }
 }
 
+@media screen and (max-width: 840px) {
+    #exclusive-animated {
+        top: -5rem;
+        left: 1rem;
+    }
+}
+
 @media screen and (max-width: 770px) {
     .br-line-mob {
         display: block;
@@ -54,6 +61,11 @@
         top: 0;
     }
 
+    #exclusive-animated {
+        top: -6rem;
+        left: 5rem;
+    }
+
     .card-1 {
         order: 1;
     }
@@ -86,9 +98,7 @@
         order: 2;
     }
 
-    #exclusive-animated {
-        left: 0;
-    }
+
 
 }
 
@@ -98,7 +108,8 @@
     }
 
     #exclusive-animated {
-        width: 25rem !important;
+        top: -6rem;
+        width: 22rem !important;
     }
 }
 
@@ -109,6 +120,7 @@
 
     #exclusive-animated {
         top: -8rem;
+        left: 0;
         width: 22rem !important;
     }
 
