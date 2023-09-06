@@ -5,7 +5,9 @@
     border: 0;
     color: var(--color-white);
     text-transform: uppercase;
-
+    font-smooth: 2rem;
+    -webkit-font-smoothing: antialiased;
+    text-shadow: #000 0px 0px 0px 0px;
 }
 
 :root {
@@ -15,6 +17,7 @@
     --color-light-black: #1a1a1a;
     --color-white: #fff;
     --color-gray: #B7B7B7;
+    color-scheme: light !important;
 }
 
 html {
@@ -27,6 +30,18 @@ body {
     position: relative;
     overflow-x: hidden;
     padding: 0 1rem;
+}
+
+h1,
+h1 * {
+    font-family: 'Bueno';
+    font-weight: 900;
+}
+
+h2,
+h2 * {
+    font-family: 'Bueno';
+    font-weight: 800;
 }
 
 .mt-1 {
@@ -115,10 +130,7 @@ body {
     padding: 1.2rem 4rem;
     font-size: 0.85rem;
     transition: 0.3s;
-
 }
-
-
 
 form .button {
     padding: 1.5rem 4rem;
@@ -142,14 +154,11 @@ form .button {
     box-shadow: unset;
 }
 
-
-
 .button-vip {
     border: 1px var(--color-white) solid;
     padding: 1rem 3rem;
     border-radius: 3rem;
     font-size: 0.9rem;
-
 }
 
 input {
@@ -184,13 +193,79 @@ a {
     text-decoration: none;
 }
 
-.font-bueno {
-    font-family: 'BuenoBold', sans-serif;
+
+#page-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: black;
+    z-index: 999;
+    animation: 6s fading-out forwards;
 }
 
-.font-bueno-extra-bold {
-    font-family: 'BuenoExtraBold', sans-serif;
+#baiko-animation {
+    width: 30rem;
+    margin: auto;
+    /* animation: 5s scaleDown linear forwards; */
 }
+
+html {
+    animation: 6s scrollPrevent linear forwards;
+}
+
+@keyframes fading-out {
+    0% {
+        opacity: 1;
+    }
+
+    50% {
+        padding: 0;
+    }
+
+    75% {
+        opacity: 1;
+        /* padding-bottom: 22%; */
+    }
+
+    100% {
+        display: none;
+        opacity: 0;
+        pointer-events: none;
+        touch-action: none;
+        /* padding-bottom: 22%; */
+    }
+}
+
+@keyframes scrollPrevent {
+    from {
+        overflow-y: hidden;
+    }
+
+    90% {
+        overflow-y: hidden;
+    }
+
+    to {
+        overflow-y: scroll;
+    }
+}
+
+/* @keyframes scaleDown {
+    0% {}
+
+    75% {
+        width: 30rem;
+        opacity: 1;
+    }
+
+    100% {
+        width: 10rem;
+        opacity: 0;
+    }
+} */
+
 
 #header {
     display: inline-flex;
@@ -364,16 +439,13 @@ a {
     font-size: 8.75rem;
     max-width: 73rem;
     margin: auto auto 5rem;
-    font-family: 'BuenoBlack';
 }
 
 .benefits-section h1 span {
     position: relative;
 }
 
-#exclusive {
-    font-family: 'BuenoBlack';
-}
+#exclusive {}
 
 #exclusive-animated {
     position: absolute;
@@ -449,7 +521,6 @@ a {
 .indented {
     margin-left: 2rem;
     color: var(--color-black);
-
 }
 
 .arrow-card {
@@ -652,7 +723,7 @@ a {
 }
 
 .card-4 div:nth-child(2) div p:nth-child(1) {
-    font-family: 'BuenoBold';
+    font-family: 'Bueno';
     font-weight: 700;
     font-size: 1.625rem;
 }
@@ -755,6 +826,7 @@ a {
 .card-7 h2 {
     font-size: 3.75rem;
     padding: 1.25rem 0;
+    font-weight: 700;
 }
 
 .card-1 p:last-child,

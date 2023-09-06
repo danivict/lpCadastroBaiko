@@ -98,8 +98,6 @@
         order: 2;
     }
 
-
-
 }
 
 @media screen and (max-width: 690px) {
@@ -129,15 +127,22 @@
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+
+    /* CSS specific to iOS devices */
+    .font-bueno-extra-bold {
+        font-family: 'BuenoBold', sans-serif;
+    }
+}
+
+
 @media screen and (max-width: 530px) {
     html {
         font-size: 10px;
     }
 
     h1,
-    h2 {
-        letter-spacing: 0.1rem;
-    }
+    h2 {}
 
     .bar-fixed {
         display: none;
@@ -167,12 +172,20 @@
         filter: brightness(100);
     }
 
+    #baiko-animation {
+        padding-bottom: 20rem !important;
+    }
+
     #header p {
         font-size: 1.5rem;
     }
 
     #main {
         /* height: 100dvh; */
+    }
+
+    #video-bg {
+        filter: brightness(20%);
     }
 
     #arrow-down {
@@ -316,8 +329,6 @@
     .bar-fixed img {
         max-width: 8rem;
     }
-
-
 
     #exclusive-animated {
         top: -15rem;

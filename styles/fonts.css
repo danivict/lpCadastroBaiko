@@ -1,58 +1,75 @@
 /* Webfont: Bueno-ExtraBold */
 @font-face {
-    font-family: 'BuenoBlack';
-    src: url('../assets/fonts/Bueno-Black.woff2') format('woff2'),
+    font-family: 'Bueno';
+    src: local('Bueno'),
+        url('../assets/fonts/Bueno-Black.woff2') format('woff2'),
+        url('../assets/fonts/Bueno-Black.woff') format('woff'),
+        url('../assets/fonts/Bueno-Black.ttf') format('truetype'),
         url('../assets/fonts/Bueno-Black.otf') format('opentype');
     /* Modern Browsers */
     /* Safari, Android, iOS */
-
     font-style: normal;
-    font-weight: normal;
+    font-weight: 900;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'BuenoExtraBold';
-    src: url('../assets/fonts/Bueno-ExtraBold.otf') format('opentype'),
-        url('../assets/fonts/Bueno-ExtraBold.woff2') format('woff2');
+    font-family: 'Bueno';
+    src: local('Bueno'),
+        url('../assets/fonts/Bueno-ExtraBold.woff2') format('woff2'),
+        url('../assets/fonts/Bueno-ExtraBold.ttf') format('truetype'),
+        url('../assets/fonts/Bueno-ExtraBold.otf') format('opentype'),
+        url('../assets/fonts/Bueno-ExtraBold.woff') format('woff');
     /* Modern Browsers */
     /* Safari, Android, iOS */
     font-style: normal;
-    font-weight: normal;
+    font-weight: 800;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
-    font-family: 'BuenoBold';
-    src: url('../assets/fonts/Bueno-Bold.otf') format('opentype'),
-        url('../assets/fonts/Bueno-Bold.woff2') format('woff2');
+    font-family: 'Bueno';
+    src: local('Bueno'),
+        url('../assets/fonts/Bueno-Bold.woff2') format('woff2'),
+        url('../assets/fonts/Bueno-Bold.woff') format('woff'),
+        url('../assets/fonts/Bueno-Bold.ttf') format('truetype'),
+        url('../assets/fonts/Bueno-Bold.otf') format('opentype');
     /* Modern Browsers */
     /* Safari, Android, iOS */
     font-style: normal;
-    font-weight: normal;
+    font-weight: 700;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'BuenoRegular';
-    src: url('../assets/fonts/Bueno-Regular.otf') format('opentype'),
-        url('../assets/fonts/Bueno-Regular.woff2') format('woff2');
+    src: local('BuenoRegular'),
+        url('../assets/fonts/Bueno-Regular.woff2') format('woff2'),
+        url('../assets/fonts/Bueno-Regular.woff') format('woff'),
+        url('../assets/fonts/Bueno-Regular.ttf') format('truetype'),
+        url('../assets/fonts/Bueno-Regular.otf') format('opentype');
     /* Modern Browsers */
     /* Safari, Android, iOS */
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }
 
 @font-face {
     font-family: 'BuenoMedium';
-    src:
-        url('../assets/fonts/Bueno-Medium.otf') format('opentype'),
-        url('../assets/fonts/Bueno-Medium.woff2') format('woff2');
+    src: local('BuenoMedium'),
+        url('../assets/fonts/Bueno-Medium.woff2') format('woff2'),
+        url('../assets/fonts/Bueno-Medium.woff') format('woff'),
+        url('../assets/fonts/Bueno-Medium.ttf') format('truetype'),
+        url('../assets/fonts/Bueno-Medium.otf') format('opentype');
     /* Modern Browsers */
     /* Safari, Android, iOS */
-
     font-style: normal;
     font-weight: normal;
     text-rendering: optimizeLegibility;
+    font-display: swap;
 }

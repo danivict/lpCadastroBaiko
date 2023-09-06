@@ -14,18 +14,23 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
+    <meta name="color-scheme" content="light">
     <!-- Google tag (gtag.js) -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5GV4EZKCWV%22%3E"></script>
     <script>
         window.dataLayer = window.dataLayer || [];
         function gtag() { dataLayer.push(arguments); }
         gtag('js', new Date());
-
         gtag('config', 'G-5GV4EZKCWV');
     </script>
+
 </head>
 
 <body>
+    <div id="page-loading">
+        <lottie-player id="baiko-animation" src="./assets/Loading_Baiko.json" speed="1.5" autoplay direction="1"
+            mode="normal"></lottie-player>
+    </div>
     <a href="#main">
         <div id="button-top"></div>
     </a>
@@ -55,7 +60,7 @@
     </header>
 
     <main id="main" class="flex justify-center">
-        <video autoplay loop muted id="video-bg">
+        <video autoplay loop muted playsinline id="video-bg">
             <source src="./assets/video-bg.mp4" type="video/mp4">
         </video>
         <form
@@ -70,7 +75,7 @@
             <span id="erroNome"></span>
             <input class="input" required name="EMAIL" placeholder="Seu e-mail:" id="email" type="email">
             <span id="erroEmail"></span>
-            <input class="input" required name="PHONE" placeholder="Seu número" id="tel" type="text" minlength="15"
+            <input class="input" required name="PHONE" placeholder="Seu número" id="tel" type="tel" minlength="15"
                 maxlength="15" pattern="\(\d{2}\)\s9\d{4}-\d{4}" title="Digite um telefone válido: (DD) 9XXXX-XXXX"
                 oninput="mascararTelefone(this)">
             <span id="erroTelefone"></span>
@@ -86,10 +91,10 @@
 
     <section class="benefits-section">
         <div>
-            <h1 class="font-bueno-extra-bold title-vip">Quem é <br class="br-line-mob">vip <br
-                    class="br-line-desktop">tem <br class="br-line-mob">be<span id="exclusive" class=""><lottie-player
-                        src="./assets/exclusivo.json" id="exclusive-animated" speed="2"
-                        style="width: 350px; height: 350px" direction="1" mode="normal"></lottie-player>nefíc</span>io!!
+            <h1 class="title-vip">Quem é <br class="br-line-mob">vip <br class="br-line-desktop">tem <br
+                    class="br-line-mob">be<span id="exclusive" class=""><lottie-player src="./assets/exclusivo.json"
+                        id="exclusive-animated" speed="2" style="width: 350px; height: 350px" direction="1"
+                        mode="normal"></lottie-player>nefíc</span>io!!
             </h1>
         </div>
         <div class="cards">
@@ -99,9 +104,8 @@
                         <p>Benefício</p>
                         <p>01</p>
                     </div>
-                    <h2 class="font-bueno-extra-bold">Acesso <span
-                            class="font-bueno-extra-bold indented">antecipado</span></h1>
-                        <p>Receba acesso antecipado à pré venda de novos lançamentos de coleções da marca.</p>
+                    <h2 class="">Acesso <span class=" indented">antecipado</span></h2>
+                    <p>Receba acesso antecipado à pré venda de novos lançamentos de coleções da marca.</p>
                 </article>
 
                 <article class="card card-3">
@@ -111,7 +115,7 @@
                     </div>
                     <div class="card-3-bg"></div>
                     <div class="card-3-sub-bg"></div>
-                    <h2 class="font-bueno">Novidades em primeira mão</h2>
+                    <h2 class="">Novidades em primeira mão</h2>
                     <p class="text-center">Seja o primeiro a saber dos nossos lançamentos, recebendo avisos e conteúdos
                         totalmente inéditos.</p>
                 </article>
@@ -120,7 +124,7 @@
                     <article class="card card-5">
                         <img class="arrow-card" src="./assets/seta-direita.svg" alt="seta direita">
                         <p>Lista vip</p>
-                        <h2 class="font-bueno">Venha fazer parte do nosso aquário</h2>
+                        <h2 class="">Venha fazer parte do nosso aquário</h2>
                         <p>Entre na lista VIP e garanta todos esses benefícios agora mesmo! Ah, e tem mais coisa vindo
                             por
                             aí,
@@ -130,8 +134,8 @@
 
 
                 <article class="card card-7">
-                    <p>Bônus</p>
-                    <h2 class="font-bueno">Pré-venda</h2>
+                    <p>Bônus 1</p>
+                    <h2 class="">Acesso a sorteios de peças exclusivas</h2>
                     <p>Fazendo parte da lista VIP, você recebe link antecipado para pré venda de alguns lançamentos
                         nossos
                         (não são todos).</p>
@@ -141,11 +145,11 @@
             <div>
                 <article class="card card-2">
                     <a id="card-a-form"
-                        href="https://docs.google.com/forms/d/1_H7RZC7PusBIyLmoSbnS6nK2ZzhGxiwfE9afGi7-uGU/edit"
+                        href="https://docs.google.com/forms/d/e/1FAIpQLSf0IFuaIzGAy3p1121xSCsUnQvOYK6jXVhSPN69ecvTtaToAQ/viewform?usp=sf_link"
                         target="_blank" rel="noopener noreferrer"></a>
                     <img class="arrow-card" src="./assets/seta-direita.svg" alt="seta direita">
                     <p>Pesquisa</p>
-                    <h2 class="font-bueno">Nos ajude a te entender!</h2>
+                    <h2 class="">Nos ajude a te entender!</h2>
                     <p>Responda a uma pesquisa rápida sobre nosso público, ajudando a Baiko a desenvolver o melhor para
                         você!
                     </p>
@@ -157,7 +161,7 @@
                             <p>Benefício</p>
                             <p>03</p>
                         </div>
-                        <h2 class="font-bueno">Cupons exclusivos</h2>
+                        <h2 class="">Cupons exclusivos</h2>
                         <p>Compre seu novo produto Baiko com preços especiais, usando cupons exclusivos apenas para quem
                             faz
                             parte da lista VIP.</p>
@@ -176,7 +180,7 @@
                         <p>Benefício</p>
                         <p>04</p>
                     </div>
-                    <h2 class="font-bueno">Desenvolva com a Baiko</h2>
+                    <h2 class="">Desenvolva<br>com a Baiko</h2>
                     <div class="card-6-images">
                         <div class="images-slide">
                             <img src="./assets/carousel/1.png" alt="">
@@ -204,7 +208,7 @@
     </section>
 
     <section class="launch-section flex flex-direction-col justify-center items-center">
-        <h1 class="font-bueno-extra-bold">Não perca nossa<br>primeira coleção</h1>
+        <h1 class="">Não perca nossa<br>primeira coleção</h1>
         <div class="launch-date-wrapper items-center">
             <p class="launch-date">Lançamento no dia <span>??/??</span></p>
             <p class="inv-text">Se inscreva<br class="mob-off"> que vai ficar<br class="mob-off"> sabendo >:)</p>
@@ -233,7 +237,25 @@
     <script type="text/javascript" src="//s3.amazonaws.com/downloads.mailchimp.com/js/mc-validate.js"></script>
     <script type="text/javascript">(function ($) { window.fnames = new Array(); window.ftypes = new Array(); fnames[0] = 'EMAIL'; ftypes[0] = 'email'; fnames[1] = 'FNAME'; ftypes[1] = 'text'; fnames[4] = 'PHONE'; ftypes[4] = 'phone'; fnames[2] = 'LNAME'; ftypes[2] = 'text'; fnames[3] = 'ADDRESS'; ftypes[3] = 'address'; fnames[5] = 'BIRTHDAY'; ftypes[5] = 'birthday'; }(jQuery)); var $mcj = jQuery.noConflict(true);
     </script>
-
+    <!-- Meta Pixel Code -->
+    <script>
+        !function (f, b, e, v, n, t, s) {
+            if (f.fbq) return; n = f.fbq = function () {
+                n.callMethod ?
+                    n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+            };
+            if (!f._fbq) f._fbq = n; n.push = n; n.loaded = !0; n.version = '2.0';
+            n.queue = []; t = b.createElement(e); t.async = !0;
+            t.src = v; s = b.getElementsByTagName(e)[0];
+            s.parentNode.insertBefore(t, s)
+        }(window, document, 'script',
+            'https://connect.facebook.net/en_US/fbevents.js');
+        fbq('init', '3089082884733326');
+        fbq('track', 'PageView');
+    </script>
+    <noscript><img height="1" width="1" style="display:none"
+            src="https://www.facebook.com/tr?id=3089082884733326&ev=PageView&noscript=1" /></noscript>
+    <!-- End Meta Pixel Code -->
 
 </body>
 
