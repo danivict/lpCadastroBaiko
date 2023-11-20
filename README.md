@@ -1,5 +1,5 @@
 # Landing Page de Cadastro da Baiko 🐡
-<a href="https://baiko.com.br/cadastro/" targe="_blank">Acesse aqui ↗</a> \
+<a href="https://lp-cadastro-baiko.vercel.app/" targe="_blank">Acesse aqui ↗</a> \
 \
 Página de cadastro de futuros membros VIP da Baiko!\
 \
